@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Rame's Library App</title>
+  </head>
+  <body>
+    <main>
+      <h1>Rame's Library App</h1>
+      <section>
+        <h2>Book Catalog</h2>
+        <p>Here is a <a href="https://www.goodreads.com/book/popular_by_date/2024">list</a> of the most popular books in 2024</p>
+      
+        <a href="https://i.pinimg.com/474x/79/9e/26/799e26931e64c86aa79850731c3960a9.jpg"><img src="https://i.pinimg.com/474x/79/9e/26/799e26931e64c86aa79850731c3960a9.jpg" alt="An aesthetic image of a book with flowers."></a>
+      </section>
+      <section>
+        <h3>Book reader must-haves:</h3>
+        <ul>
+          <li>A rainy night</li>
+          <li>A TBR (to be read) that will never be completed</li>
+          <li>Candles</li>
+        </ul>
+        <figure>
+          <img src="https://i.pinimg.com/474x/ee/5f/8e/ee5f8e996596cdb363cd3a57496c6833.jpg" alt="A book with a forest in the background.">
+          <figcaption>I <em>love</em> plot twists.</figcaption>  
+        </figure>
+        <h3>Top 3 books (according to goodreads):</h3>
+        <ol>
+          <li>Fourth Wing</li>
+          <li>Pride & Prejudice</li>
+          <li>The Seven Husbands of Evelyn Hugo</li>
+        </ol>
+        <figure>
+          <img src="https://i.pinimg.com/236x/d1/d5/60/d1d560089d93ae4b6963605a4e856355.jpg" alt="Stack of books with a pair of glasses at the top.">
+          <figcaption>I <strong>hate</strong> a miscommunication trope.</figcaption>  
+        </figure>
+      </section>
+      <section>
+        <h2>Book Form</h2>
+        <form id="bookForm">
+          <fieldset>
+            <legend>Do you prefer physical books or e-books?</legend>
+            <label><input id="Physical" type="radio" name="type" value="Physical" checked>Physical Books</label>
+            <label><input id="Ebook" type="radio" name="type" value="Ebook">E-Books</label>
+          </fieldset>
+          <fieldset>
+            <legend>What's your favorite book genre?</legend>
+            <input id="Romance" type="checkbox" name="genre" value="Romance" checked> <label for="Romance">Romance</label>
+            <input id="Fantasy" type="checkbox" name="genre" value="Fantasy"> <label for="Fantasy">Fantasy</label>
+            <input id="Horror" type="checkbox" name="genre" value="Horror"> <label for="Horror">Horror</label>
+          </fieldset>
+          <input type="text" id="favBook" name="fav-book" placeholder="Your favorite book title" required>
+          <button type="submit">Submit</button>
+          <p id="msg" style="display: none; color: powderblue; font-weight: bold"> Thanks!</p>
+        </form>
+
+        <script>
+          document.getElementById("bookForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("favBook").value = "";
+            document.getElementById("msg").style.display = "block";
+          });
+        </script>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Source - <a href="https://github.com/k-rameen">rame's github</a>
+      </p>
+    </footer>
+  </body>
+</html>
