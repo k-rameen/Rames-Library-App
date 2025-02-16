@@ -10,6 +10,7 @@ I decided to create my first website about something I enjoy deeply—reading! �
 - Goodreads for book-related links
   
 📖 About the App
+
 This app serves as a book catalog, showcasing the top books of 2024 and diving into fun book-related discussions. You can even share your opinion through a short questionnaire!
 
 🔗 Try it Here:
